@@ -1,5 +1,4 @@
 import { Tabs } from "expo-router";
-import React from "react";
 import { Image, ImageBackground, Text, View } from "react-native";
 
 const TabWithIcon = ({ focused, color, size, icon, label }: any) => {
@@ -66,7 +65,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="add"
+        name="quiz"
         options={{
           headerShown: false,
           tabBarIcon: ({ color, focused, size }) => (
@@ -74,8 +73,8 @@ const _layout = () => {
               focused={focused}
               color={color}
               size={size}
-              icon={require("../../assets/images/add.png")}
-              label="Add"
+              icon={require("../../assets/images/quiz.png")}
+              label="Quiz"
             />
           ),
         }}
