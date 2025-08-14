@@ -5,7 +5,9 @@
   "scripts": {
     "start": "expo start",
     "start:tunnel": "dotenv -e .env.test.local -- expo start --tunnel",
+    "start:tunnel:dev": "dotenv -e .env.dev -- expo start --tunnel",
     "start:tunnel:stage": "dotenv -e .env.stage -- expo start --tunnel",
+    "start:tunnel:prod": "dotenv -e .env.prod -- expo start --tunnel",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
@@ -18,7 +20,7 @@
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
     "dotenv-cli": "^8.0.0",
-    "expo": "~53.0.13",
+    "expo": "~53.0.19",
     "expo-blur": "~14.1.5",
     "expo-constants": "~17.1.6",
     "expo-font": "~13.3.1",
@@ -35,6 +37,7 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.4",
+    "react-native-config": "^1.5.5",
     "react-native-css-interop": "^0.1.22",
     "react-native-gesture-handler": "~2.24.0",
     "react-native-reanimated": "~3.17.4",
@@ -43,7 +46,8 @@
     "react-native-web": "~0.20.0",
     "react-native-webview": "13.13.5",
     "tailwindcss": "^3.4.17",
-    "zustand": "^5.0.6"
+    "zustand": "^5.0.6",
+    "expo-build-properties": "~0.14.8"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

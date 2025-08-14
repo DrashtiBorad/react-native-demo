@@ -1,0 +1,32 @@
+export default {
+  expo: {
+    name: process.env.EXPO_PUBLIC_APP_NAME || "demo_app",
+    slug: process.env.EXPO_PUBLIC_APP_NAME || "demo_app",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/images/icon.png",
+    scheme: "demoapp",
+    userInterfaceStyle: "automatic",
+    newArchEnabled: true,
+    ios: {
+      supportsTablet: true,
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/images/adaptive-icon.png",
+        backgroundColor: "#ffffff",
+      },
+      edgeToEdgeEnabled: true,
+      package: "com.anonymous.demo_app",
+    },
+    web: {
+      bundler: "metro",
+      output: "static",
+      favicon: "./assets/images/favicon.png",
+    },
+    plugins: ["expo-router"],
+    experiments: {
+      typedRoutes: true,
+    },
+  },
+};

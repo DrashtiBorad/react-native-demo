@@ -40,6 +40,7 @@ export default function Index() {
       </View>
     );
   }
+
   return (
     <View className="flex-1 bg-white">
       <View className="w-full px-5 pt-4 my-8">
@@ -59,6 +60,10 @@ export default function Index() {
       </View>
 
       <ScrollView className="flex-1 px-4">
+        <Text className="text-center text-2xl font-bold pb-4">
+          {process.env.EXPO_PUBLIC_APP_NAME}
+        </Text>
+
         {users.map((user) => (
           <View key={user.id} className="mb-2 ">
             <TouchableOpacity

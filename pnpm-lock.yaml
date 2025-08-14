@@ -21,7 +21,7 @@ dependencies:
     specifier: ^8.0.0
     version: 8.0.0
   expo:
-    specifier: ~53.0.13
+    specifier: ~53.0.19
     version: 53.0.19(@babel/core@7.28.0)(react-native-webview@13.13.5)(react-native@0.79.4)(react@19.0.0)
   expo-blur:
     specifier: ~14.1.5
@@ -71,6 +71,9 @@ dependencies:
   react-native:
     specifier: 0.79.4
     version: 0.79.4(@babel/core@7.28.0)(@types/react@19.0.14)(react@19.0.0)
+  react-native-config:
+    specifier: ^1.5.5
+    version: 1.5.5
   react-native-css-interop:
     specifier: ^0.1.22
     version: 0.1.22(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.5.2)(react-native@0.79.4)(react@19.0.0)(tailwindcss@3.4.17)
@@ -6534,6 +6537,15 @@ packages:
 
   /react-is@19.1.0:
     resolution: {integrity: sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==}
+    dev: false
+
+  /react-native-config@1.5.5:
+    resolution: {integrity: sha512-dGdLnBU0cd5xL5bF0ROTmHYbsstZnQKOEPfglvZi1vStvAjpld14X25K6mY3KGPTMWAzx6TbjKeq5dR+ILuMMA==}
+    peerDependencies:
+      react-native-windows: '>=0.61'
+    peerDependenciesMeta:
+      react-native-windows:
+        optional: true
     dev: false
 
   /react-native-css-interop@0.1.22(react-native-reanimated@3.17.5)(react-native-safe-area-context@5.5.2)(react-native@0.79.4)(react@19.0.0)(tailwindcss@3.4.17):
